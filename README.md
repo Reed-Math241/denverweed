@@ -26,4 +26,4 @@ devtools::install_github("Reed-Math241/pkgDemo")
 ``` r
 library(pkgDemo)
 ```
-hello there 
+hello there it is grt
