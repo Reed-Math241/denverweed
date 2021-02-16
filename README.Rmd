@@ -26,6 +26,7 @@ The goal of XXX is to ...
 
 The development version of XXX is available from [GitHub](https://github.com/) with:
 I am making a change test test test
+hello batman welcome gotham 
 ``` r
 # install.packages("devtools")
 devtools::install_github("Reed-Math241/pkgDemo")
