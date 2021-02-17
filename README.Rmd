@@ -31,6 +31,18 @@ hello batman welcome gotham
 # install.packages("devtools")
 devtools::install_github("Reed-Math241/pkgDemo")
 ```
+
+```{r}
+usethis::use_data_raw()
+```
+
+```{r}
+usethis::use_data(weed, overwrite = TRUE)
+```
+
+```{r}
+usethis::use_r("weed.rda")
+```
 ## Example
 
 
