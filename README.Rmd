@@ -45,6 +45,12 @@ usethis::use_r("weed.rda")
 ```
 ## Example
 
+try pivoting the data frame to change things up
+
+```{r}{echo = true, eval = true}
+
+
+```
 
 ```{r example}
 library(pkgDemo)
