@@ -1,28 +1,17 @@
 #' Marijuana Gross Sales (2014-2017)
 #' 
-#' A dataset on medical and recreational marijuana sales from 2014 to 2017 in Denver, Colorado
+#' A dataset on monthly medical and recreational marijuana sales from 2014 to 2017 in Denver, Colorado
 #' 
 #' @docType data
-#' @name SaratogaHouses
-#' @usage data(SaratogaHouses)
-#' @format  A data frame with 1728 observations on the following 16 variables.
+#' @name pkggrpm
+#' @usage data(pkggrpm)
+#' @format  A data frame with 90 observations and 4 variables.
 #' \itemize{
-#' \item{\code{price}}{ price (US dollars)}
-#' \item{\code{lotSize}}{ size of lot (acres)}
-#' \item{\code{age}}{ age of house (years)}
-#' \item{\code{landValue}}{ value of land (US dollars)}
-#' \item{\code{livingArea}}{ living are (square feet)}
-#' \item{\code{pctCollege}}{ percent of neighborhood that graduated college}
-#' \item{\code{bedrooms}}{ number of bedrooms}
-#' \item{\code{firplaces}}{ number of fireplaces}
-#' \item{\code{bathrooms}}{ number of bathrooms (half bathrooms have no shower or tub)}
-#' \item{\code{rooms}}{ number of rooms}
-#' \item{\code{heating}}{ type of heating system}
-#' \item{\code{fuel}}{ fuel used for heating}
-#' \item{\code{sewer}}{ type of sewer system}
-#' \item{\code{waterfront}}{ whether property includes waterfront}
-#' \item{\code{newConstruction}}{ whether the property is a new construction}
-#' \item{\code{centralAir}}{ whether the house has central air}
+#' \item{\code{YEAR}}{ Years of marijuana sales (2014-2017))}
+#' \item{\code{MONTH}}{ Months of marijuana sales }
+#' \item{\code{GROSS_SALES_TYPE}}{ Medical or recreational sales of marijuana}
+#' \item{\code{GROSS_SALES}}{ Total gross sales of marijuana (US dollars)}
+
 #' }
 #' @source 
 #' Data collected by Candice Corvetti and used in the "Stat 101" case study 
