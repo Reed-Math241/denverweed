@@ -53,7 +53,7 @@ try pivoting the data frame to change things up
 ```
 
 ```{r example}
-library(pkgDemo)
+library(pkgGrpm)
 ```
 
 
