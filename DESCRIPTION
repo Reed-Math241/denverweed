@@ -2,7 +2,7 @@ Package: pkgGrpm
 Type: Package
 Title: Marijuana Gross Sales in Denver, CO 2014-2017
 Version: 0.420
-Author: Grisha Post
+Author: Grisha Post, Garrett Price
 Maintainer: The package maintainer <grpost@reed.edu>
 Description: Gross Marijuana sales in Denver CO from 2014-2017 by Year, Month, and Sale Type (Retail or Medical)
 License: CC BY 3.0
