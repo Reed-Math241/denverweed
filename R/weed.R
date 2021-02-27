@@ -1,6 +1,7 @@
 #' Marijuana Gross Sales (2014-2017)
 #' 
-#' A dataset on monthly medical and recreational marijuana sales from 2014 to 2017 in Denver, Colorado
+#' A dataset on monthly medical and recreational marijuana sales from 2014 to
+#'  2017 in Denver, Colorado
 #' 
 #' @docType data
 #' @name pkggrpm
@@ -14,8 +15,9 @@
 
 #' }
 #' @source 
-#' Data collected by Candice Corvetti and used in the "Stat 101" case study 
-#' "How much is a Fireplace Worth".  
+#' Data collected by City and County of Denver Office of Marijuana Policy and 
+#' provided by City of Denver Open Data Catalog and used in the "MATH 241" 
+#' create an r data package project.  
 #' See also 
-#' <https://www.saratogacountyny.gov/departments/real-property-tax-service-agency/>
+#' < http://data.denvergov.org>
 NA
