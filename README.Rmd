@@ -43,11 +43,20 @@ usethis::use_data(weed, overwrite = TRUE)
 usethis::use_r("weed.rda")
 devtools::document()
 ```
+
+```{r}
+devtools::check(document = FALSE)
+```
+
+```{r}
+devtools::load_all()
+```
 ## Example
 
 try pivoting the data frame to change things up
 
 ```{r}{echo = true, eval = true}
+
 
 
 ```

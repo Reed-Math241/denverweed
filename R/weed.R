@@ -19,5 +19,5 @@
 #' provided by City of Denver Open Data Catalog and used in the "MATH 241" 
 #' create an r data package project.  
 #' See also 
-#' < http://data.denvergov.org>
-NA
+#' http://data.denvergov.org>
+"pkggrpm"
