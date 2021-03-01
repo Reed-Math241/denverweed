@@ -61,8 +61,6 @@ try pivoting the data frame to change things up
 
 ```{r}
 
-data(package = 'pkgGrpm')
-
 library(pkgGrpm)
 
 head(weed)
