@@ -34,7 +34,7 @@ The development version of XXX is available from [GitHub](https://github.com/) w
 ```
 
 ```{r}
-install.packages("devtools")
+library("devtools")
 devtools::install()
 ```
 
@@ -97,7 +97,6 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
   ylab("Gross Sales ($)") + 
   xlab("Year") +
   theme(axis.text.x = element_text(angle = 90))
-
 
 ```
 
