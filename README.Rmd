@@ -30,7 +30,7 @@ The development version of XXX is available from [GitHub](https://github.com/) w
 
 ``` {r}
 # install.packages("devtools")
-devtools::install_github("Reed-Math241/pkgDemo")
+# devtools::install_github("Reed-Math241/pkgDemo")
 ```
 
 ```{r}
@@ -82,19 +82,12 @@ library(pkgGrpm)
 head(weed)
 ```
 
-
 ## Example
 
 ```{r}
 
-library(pkgGrpm)
 
-head(weed)
 
-```
-
-```{r example}
-library(pkgGrpm)
 ```
 
 
