@@ -74,7 +74,7 @@ devtools::build_readme()
 
 The Data were collected and made available by the City of Denver Open Data Catalog
 
-It contains the dataswe `weed`, which contains 4 variables and 90 observations.
+It contains the dataset `weed`, which contains 4 variables and 90 observations.
 
 ```{r}
 library(pkgGrpm)
