@@ -29,6 +29,7 @@ The development version of XXX is available from [GitHub](https://github.com/) w
 ``` {r}
 install.packages("devtools")
 devtools::install_github("Reed-Math241/pkgGrpm")
+devtools::install()
 ```
 
 ```{r}
@@ -55,7 +56,9 @@ devtools::load_all()
 
 try pivoting the data frame to change things up
 
-```{r}{echo = true, eval = true}
+```{r}
+
+data(package = 'pkgGrpm')
 
 
 
