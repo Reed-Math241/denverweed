@@ -6,6 +6,10 @@ output: github_document
 
 <!-- You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.  -->
 
+```{r}
+devtools::build_readme(path = "~/math241/project 1/pkgGrpm")
+```
+
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -32,17 +36,19 @@ devtools::install()
 ```
 
 ```{r}
-usethis::use_data_raw()
+#usethis::use_data_raw()
 ```
 
 ```{r}
-usethis::use_data(weed, overwrite = TRUE)
+#usethis::use_data(weed, overwrite = TRUE)
 ```
 
 ```{r}
 usethis::use_r("weed.rda")
 devtools::document()
 ```
+
+
 
 ```{r}
 devtools::check(document = FALSE)
