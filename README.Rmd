@@ -64,7 +64,9 @@ try pivoting the data frame to change things up
 
 data(package = 'pkgGrpm')
 
+library(pkgGrpm)
 
+head(weed)
 
 ```
 
