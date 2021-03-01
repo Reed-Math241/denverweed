@@ -28,7 +28,7 @@ The development version of XXX is available from [GitHub](https://github.com/) w
 
 ``` {r}
 install.packages("devtools")
-devtools::install_github("Reed-Math241/pkgDemo")
+devtools::install_github("Reed-Math241/pkgGrpm")
 ```
 
 ```{r}
@@ -66,7 +66,7 @@ try pivoting the data frame to change things up
 ```
 
 ```{r example}
-library(pkgDemo)
+library(pkgGrpm)
 ```
 
 
