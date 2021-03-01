@@ -64,7 +64,7 @@ devtools::build_readme()
 ```
 
 ```{r}
-#devtools::load_all()
+devtools::load_all()
 ```
 
 ```{r}
@@ -85,7 +85,18 @@ head(weed)
 ## Example
 
 ```{r}
+library(tidyverse)
+```
 
+```{r}
+
+ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) + 
+  geom_bar(stat = 'identity') +
+  facet_wrap(~YEAR) +
+  scale_y_continuous(labels = scales::comma) +
+  ylab("Gross Sales ($)") + 
+  xlab("Year") +
+  theme(axis.text.x = element_text(angle = 90))
 
 
 ```
