@@ -5,7 +5,7 @@
 #' 
 #' @docType data
 #' @name pkggrpm
-#' @usage data(pkggrpm)
+#' @usage data(pkgGrpm)
 #' @format  A data frame with 90 observations and 4 variables.
 #' \itemize{
 #' \item{\code{YEAR}}{ Years of marijuana sales (2014-2017))}
@@ -20,4 +20,4 @@
 #' create an r data package project.  
 #' See also 
 #' http://data.denvergov.org>
-"pkggrpm"
+"pkgGrpm"
