@@ -28,5 +28,10 @@ weed <- weed %>%
                                                "NOVEMBER", 
                                                 "DECEMBER")))
 
+
+weed_wider <- weed %>%
+  pivot_wider(names_from = GROSS_SALES_TYPE, values_from = GROSS_SALES)
+
 usethis::use_data(weed, overwrite = TRUE)
 
+usethis::use_data(weed_wider, overwrite = TRUE)

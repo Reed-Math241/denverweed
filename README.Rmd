@@ -28,58 +28,22 @@ The goal of XXX is to ...
 
 The development version of XXX is available from [GitHub](https://github.com/) with:
 
-``` {r}
-# install.packages("devtools")
-# devtools::install_github("Reed-Math241/pkgDemo")
-```
 
-```{r}
-library("devtools")
-devtools::install()
-```
-
-```{r}
-devtools::build_readme()
-
-#path = "~/math241/project 1/pkgGrpm"
-```
-
-```{r}
-#usethis::use_data_raw()
-```
-
-```{r}
-#usethis::use_data(weed, overwrite = TRUE)
-```
-
-```{r}
-#usethis::use_r("weed.rda")
-#devtools::document()
-```
-
-
-
-```{r}
-#devtools::check(document = FALSE)
-```
-
-```{r}
-devtools::load_all()
-```
-
-```{r}
-#devtools::install("pkggrpm")
-```
 ## About the data 
 
 The Data were collected and made available by the City of Denver Open Data Catalog
 
-It contains the dataset `weed`, which contains 4 variables and 90 observations.
+It contains the dataset `weed`, which contains 4 variables and 90 observations, 
+as well as the dataset `weed_wider`, a pivoted, untidy version of `weed` which may be useful for certain graphs
 
 ```{r}
 library(pkgGrpm)
 
 head(weed)
+head(weed_wider)
+
+weed
+weed_wider
 ```
 
 ## Example
