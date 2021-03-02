@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# denverweed <img src='man/figures/weedhexnoface.png' align="right" height="138.5" /></a>
+# denverweed <img src='man/figures/weedhexnoface.JPG' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
