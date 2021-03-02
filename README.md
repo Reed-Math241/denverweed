@@ -3,13 +3,7 @@
 
 <!-- You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.  -->
 
-# denverweed
-
-``` r
-knitr::include_graphics("~/math241/project 1/pkgGrpm/weedhexnoface.JPG")
-```
-
-<img src="~/math241/project 1/pkgGrpm/weedhexnoface.JPG" width="100%" />
+# denverweed <img src='~/math241/project 1/pkgGrpm/weedhexnoface.JPG' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 
@@ -95,7 +89,7 @@ ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) +
   theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
 gross sales by month, faceted by year
 
@@ -111,7 +105,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
   theme(axis.text.x = element_text(angle = 90))
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
 gross sales by month, faceted by year and retail/medical
 
@@ -126,7 +120,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
   theme(axis.text.x = element_text(angle = 90))
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
 
 finally, a use for `weed_wider` in a scatterplot of medical vs retail
 sales, by year
@@ -139,4 +133,4 @@ ggplot(weed_wider, aes(x = `Medical Total Gross Sales`, y = `Retail Total Gross 
   theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />

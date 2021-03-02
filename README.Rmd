@@ -17,10 +17,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# denverweed 
-```{r}
-knitr::include_graphics("~/math241/project 1/pkgGrpm/weedhexnoface.JPG")
-```
+# denverweed <img src='~/math241/project 1/pkgGrpm/weedhexnoface.JPG' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
