@@ -80,7 +80,7 @@ library(tidyverse)
 #> x dplyr::lag()    masks stats::lag()
 
 ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) + 
-  geom_bar(stat = 'identity') +
+  geom_bar(stat = 'identity', fill = '#709B40') +
   facet_wrap(~GROSS_SALES_TYPE) +
   scale_y_continuous(labels = scales::comma) + 
   ylab("Gross Sales ($)") + 
@@ -95,7 +95,7 @@ gross sales by month, faceted by year
 ``` r
 
 ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) + 
-  geom_bar(stat = 'identity') +
+  geom_bar(stat = 'identity', fill = '#709B40') +
   facet_wrap(~YEAR) +
   scale_y_continuous(labels = scales::comma) +
   ylab("Gross Sales ($)") + 
@@ -110,7 +110,7 @@ gross sales by month, faceted by year and retail/medical
 
 ``` r
 ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) + 
-  geom_bar(stat = 'identity') +
+  geom_bar(stat = 'identity', fill = '#709B40') +
   facet_grid(GROSS_SALES_TYPE ~ YEAR) +
   scale_y_continuous(labels = scales::comma) + 
   ylab("Gross Sales ($)") + 
