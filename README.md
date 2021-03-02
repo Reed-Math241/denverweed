@@ -118,7 +118,8 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
 ```
 
 <img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
-finally, a use for `weed_wider`, a scatterplot of medical vs retail
+
+finally, a use for `weed_wider` in a scatterplot of medical vs retail
 sales, by year
 
 ``` r
