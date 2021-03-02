@@ -99,7 +99,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
 
 
 ```
-finally, a use for `weed_wider` : a scatterplot of medical vs retail sales, by year
+finally, a use for `weed_wider`, a scatterplot of medical vs retail sales, by year
 
 ```{r}
 
