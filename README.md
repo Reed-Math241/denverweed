@@ -48,7 +48,8 @@ head(weed)
 ```
 
 It also contains `weed_wider`, a pivoted, untidy version of `weed` which
-may be useful for certain graphs
+may be useful for certain graphs, containing 4 variables and 45
+observations
 
 ``` r
 head(weed_wider)
@@ -117,7 +118,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
 ```
 
 <img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
-finally, a use for weed\_wider: a scatterplot of medical vs retail
+finally, a use for `weed_wider`: a scatterplot of medical vs retail
 sales, by year
 
 ``` r
