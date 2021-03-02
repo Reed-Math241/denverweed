@@ -3,7 +3,7 @@
 
 <!-- You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.  -->
 
-# denverweed <img src='~/math241/project 1/pkgGrpm/weedhexnoface.JPG' align="right" height="138.5" /></a>
+# denverweed <img src='man/figures/weedhexnoface.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 
