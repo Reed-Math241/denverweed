@@ -36,7 +36,7 @@ The development version of denverweed is available from [GitHub](https://github.
 
 ## About the data 
 
-The Data were collected and made available by the City of Denver Open Data Catalog.
+The data were collected and made available by the City of Denver Open Data Catalog.
 
 the denverweed package contains two datasets. 
 ```{r}
@@ -51,7 +51,7 @@ It contains the dataset `weed`, which contains 4 variables and 90 observations:
 head(weed)
 ```
 
-It also contains `weed_wider`, a pivoted, untidy version of `weed` which may be useful for certain graphs, containing 4 variables and 45 observations
+It also contains `weed_wider`, a pivoted, untidy version of `weed` which may be useful for certain graphs, containing 4 variables and 45 rows
 
 ```{r}
 head(weed_wider)
