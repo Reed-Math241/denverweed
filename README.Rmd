@@ -17,8 +17,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Insert Package Name
-
+# denverweed
 <!-- badges: start -->
 <!-- badges: end -->
 
@@ -26,32 +25,53 @@ The goal of XXX is to ...
 
 ## Installation
 
-The development version of XXX is available from [GitHub](https://github.com/) with:
+The development version of denverweed is available from [GitHub](https://github.com/) with:
+```{r}
+#install.packages("devtools")
+#devtools::install_github("Reed-Math241/pkgGrpm")
+```
+
 
 
 ## About the data 
 
-The Data were collected and made available by the City of Denver Open Data Catalog
+The Data were collected and made available by the City of Denver Open Data Catalog.
 
-It contains the dataset `weed`, which contains 4 variables and 90 observations, 
-as well as the dataset `weed_wider`, a pivoted, untidy version of `weed` which may be useful for certain graphs
-
+the denverweed package contains two datasets. 
 ```{r}
 library(pkgGrpm)
+data(package = 'pkgGrpm')
+```
 
+
+It contains the dataset `weed`, which contains 4 variables and 90 observations:
+
+```{r}
 head(weed)
-head(weed_wider)
+```
 
-weed
-weed_wider
+It also contains `weed_wider`, a pivoted, untidy version of `weed` which may be useful for certain graphs
+
+```{r}
+head(weed_wider)
 ```
 
 ## Example
 
+gross sales by year, faceted by medical or retail 
 ```{r}
 library(tidyverse)
+
+ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) + 
+  geom_bar(stat = 'identity') +
+  facet_wrap(~GROSS_SALES_TYPE) +
+  scale_y_continuous(labels = scales::comma) + 
+  ylab("Gross Sales ($)") + 
+  xlab("Year")+
+  theme_bw()
 ```
 
+gross sales by month, faceted by year 
 ```{r}
 
 ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) + 
@@ -60,10 +80,33 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
   scale_y_continuous(labels = scales::comma) +
   ylab("Gross Sales ($)") + 
   xlab("Year") +
+  theme_bw()+
   theme(axis.text.x = element_text(angle = 90))
 
 ```
 
+gross sales by month, faceted by year and retail/medical
 
+```{r}
+ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) + 
+  geom_bar(stat = 'identity') +
+  facet_grid(GROSS_SALES_TYPE ~ YEAR) +
+  scale_y_continuous(labels = scales::comma) + 
+  ylab("Gross Sales ($)") + 
+  xlab("Year") +
+  theme_bw()+
+  theme(axis.text.x = element_text(angle = 90))
+
+
+```
+finally, a use for weed_wider: a scatterplot of medical vs retail sales, by year
+
+```{r}
+
+ggplot(weed_wider, aes(x = `Medical Total Gross Sales`, y = `Retail Total Gross Sales`, color = YEAR)) +
+  geom_point()+
+  scale_y_continuous(labels = scales::comma)+
+  theme_bw()
+```
 
 
