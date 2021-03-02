@@ -5,11 +5,20 @@
 
 # denverweed
 
+``` r
+knitr::include_graphics("~/math241/project 1/pkgGrpm/weedhexnoface.JPG")
+```
+
+<img src="~/math241/project 1/pkgGrpm/weedhexnoface.JPG" width="100%" />
+
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of XXX is to …
+The goal of denverweed is to provide a simple dataset for analysis which
+shows the different uses of wide/long form data, while giving insight
+into the trials and tribulations undergone by America’s favorite
+smokeable/tokeable 5-to-13 leafletted plant
 
 ## Installation
 
@@ -86,7 +95,7 @@ ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) +
   theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
 
 gross sales by month, faceted by year
 
@@ -102,7 +111,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
   theme(axis.text.x = element_text(angle = 90))
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
 
 gross sales by month, faceted by year and retail/medical
 
@@ -117,7 +126,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
   theme(axis.text.x = element_text(angle = 90))
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
 
 finally, a use for `weed_wider` in a scatterplot of medical vs retail
 sales, by year
@@ -130,4 +139,4 @@ ggplot(weed_wider, aes(x = `Medical Total Gross Sales`, y = `Retail Total Gross 
   theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
