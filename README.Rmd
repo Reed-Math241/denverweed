@@ -60,15 +60,18 @@ head(weed_wider)
 ## Example
 
 gross sales by year, faceted by medical or retail 
-```{r}
+```{r, eval = FALSE}
 library(tidyverse)
+```
 
+```{r} 
 ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) + 
   geom_bar(stat = 'identity', fill = '#709B40') +
   facet_wrap(~GROSS_SALES_TYPE) +
   scale_y_continuous(labels = scales::comma) + 
   ylab("Gross Sales ($)") + 
-  xlab("Year")
+  xlab("Year")+
+  theme_bw()
 ```
 
 gross sales by month, faceted by year 
