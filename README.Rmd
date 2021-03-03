@@ -80,7 +80,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
   facet_wrap(~YEAR) +
   scale_y_continuous(labels = scales::comma) +
   ylab("Gross Sales ($)") + 
-  xlab("Year") +
+  xlab("Month") +
   theme_bw()+
   theme(axis.text.x = element_text(angle = 90))
 
@@ -94,7 +94,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
   facet_grid(GROSS_SALES_TYPE ~ YEAR) +
   scale_y_continuous(labels = scales::comma) + 
   ylab("Gross Sales ($)") + 
-  xlab("Year") +
+  xlab("Month") +
   theme_bw()+
   theme(axis.text.x = element_text(angle = 90))
 
