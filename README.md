@@ -79,13 +79,12 @@ library(tidyverse)
 #> x dplyr::filter() masks stats::filter()
 #> x dplyr::lag()    masks stats::lag()
 
-ggplot(weed) + 
-  geom_bar(stat = 'identity', fill = '#709B40', aes(x = YEAR, y = GROSS_SALES)) +
+ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) + 
+  geom_bar(stat = 'identity', fill = '#709B40') +
   facet_wrap(~GROSS_SALES_TYPE) +
   scale_y_continuous(labels = scales::comma) + 
   ylab("Gross Sales ($)") + 
-  xlab("Year")+
-  theme_bw()
+  xlab("Year")
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />

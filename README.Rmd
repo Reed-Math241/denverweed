@@ -63,13 +63,12 @@ gross sales by year, faceted by medical or retail
 ```{r}
 library(tidyverse)
 
-ggplot(weed) + 
-  geom_bar(stat = 'identity', fill = '#709B40', aes(x = YEAR, y = GROSS_SALES)) +
+ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) + 
+  geom_bar(stat = 'identity', fill = '#709B40') +
   facet_wrap(~GROSS_SALES_TYPE) +
   scale_y_continuous(labels = scales::comma) + 
   ylab("Gross Sales ($)") + 
-  xlab("Year")+
-  theme_bw()
+  xlab("Year")
 ```
 
 gross sales by month, faceted by year 
