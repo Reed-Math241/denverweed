@@ -63,7 +63,7 @@ gross sales by year, faceted by medical or retail
 ```{r echo = TRUE, warning = FALSE, message = FALSE}
 library(tidyverse)
 ```
-```{r, fig.height = 1, fig.width = 6} 
+```{r, fig.height = 3, fig.width = 4.5} 
 ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) + 
   geom_bar(stat = 'identity', fill = '#709B40') +
   facet_wrap(~GROSS_SALES_TYPE) +
@@ -74,7 +74,7 @@ ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) +
 ```
 
 gross sales by month, faceted by year 
-```{r, fig.height = 4, fig.width = 6}
+```{r, fig.height = 4, fig.width = 4.5}
 
 ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) + 
   geom_bar(stat = 'identity', fill = '#709B40') +
@@ -89,7 +89,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
 
 gross sales by month, faceted by year and retail/medical
 
-```{r, fig.height = 5.5, fig.width = 8}
+```{r, fig.height = 4, fig.width = 7}
 ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) + 
   geom_bar(stat = 'identity', fill = '#709B40') +
   facet_grid(GROSS_SALES_TYPE ~ YEAR) +
@@ -105,7 +105,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
 finally, a use for `weed_wider` in a scatterplot of medical vs retail sales, by year
 
 
-```{r, fig.height = 4, fig.width = 6}
+```{r, fig.height = 3, fig.width = 5}
 
 ggplot(weed_wider, aes(x = `Medical Total Gross Sales`, y = `Retail Total Gross Sales`, color = YEAR)) +
   geom_point() +
