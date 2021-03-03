@@ -36,7 +36,7 @@ The development version of denverweed is available from [GitHub](https://github.
 
 ## About the data 
 
-The data were collected and made available by the City of Denver Open Data Catalog.
+The data were collected and made available by the [City of Denver Open Data Catalog](http://data.denvergov.org).
 
 the denverweed package contains two datasets. 
 ```{r}
@@ -60,11 +60,11 @@ head(weed_wider)
 ## Example
 
 gross sales by year, faceted by medical or retail 
-```{r, eval = FALSE}
+```{r, echo = TRUE, results = 'hide'}
 library(tidyverse)
 ```
 
-```{r} 
+```{r, fig.height = 4, fig.width = 6} 
 ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) + 
   geom_bar(stat = 'identity', fill = '#709B40') +
   facet_wrap(~GROSS_SALES_TYPE) +
@@ -75,7 +75,7 @@ ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) +
 ```
 
 gross sales by month, faceted by year 
-```{r}
+```{r, fig.height = 4, fig.width = 6}
 
 ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) + 
   geom_bar(stat = 'identity', fill = '#709B40') +
@@ -90,7 +90,7 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
 
 gross sales by month, faceted by year and retail/medical
 
-```{r}
+```{r, fig.height = 5.5, fig.width = 8}
 ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) + 
   geom_bar(stat = 'identity', fill = '#709B40') +
   facet_grid(GROSS_SALES_TYPE ~ YEAR) +
@@ -106,12 +106,17 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
 finally, a use for `weed_wider` in a scatterplot of medical vs retail sales, by year
 
 
-```{r}
+```{r, fig.height = 4, fig.width = 6}
 
 ggplot(weed_wider, aes(x = `Medical Total Gross Sales`, y = `Retail Total Gross Sales`, color = YEAR)) +
-  geom_point()+
-  scale_y_continuous(labels = scales::comma)+
+  geom_point() +
+  scale_y_continuous(labels = scales::comma) +
+   scale_x_continuous(labels = scales::comma) +
   theme_bw()
 ```
 
+#Attribution 
+The data “Marijuana Gross Sales” ver 1.0.733, from the [City of Denver Open Data Catalog](http://data.denvergov.org), is licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)
 
+#License 
+Data are available under a [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/) license, in accordance with the [City of Denver Open Data Catalog terms of use](https://www.denvergov.org/opendata/termsofuse) 
