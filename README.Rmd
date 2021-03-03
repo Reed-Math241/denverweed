@@ -27,9 +27,9 @@ The goal of denverweed is to provide a simple dataset for analysis which shows t
 ## Installation
 
 The development version of denverweed is available from [GitHub](https://github.com/) with:
-```{r}
-#install.packages("devtools")
-#devtools::install_github("Reed-Math241/pkgGrpm")
+```{r, eval = FALSE}
+install.packages("devtools")
+devtools::install_github("Reed-Math241/pkgGrpm")
 ```
 
 
