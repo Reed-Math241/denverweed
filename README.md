@@ -137,11 +137,15 @@ ggplot(weed_wider, aes(x = `Medical Total Gross Sales`, y = `Retail Total Gross 
 
 <img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
 
-\#Attribution The data “Marijuana Gross Sales” ver 1.0.733, from the
-[City of Denver Open Data Catalog](http://data.denvergov.org), is
-licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)
+## Attribution
 
-\#License Data are available under a [CC
+The data “Marijuana Gross Sales” ver 1.0.733, from the [City of Denver
+Open Data Catalog](http://data.denvergov.org), is licensed under [CC
+BY 3.0](http://creativecommons.org/licenses/by/3.0/)
+
+## License
+
+Data are available under a [CC
 BY 3.0](http://creativecommons.org/licenses/by/3.0/) license, in
 accordance with the [City of Denver Open Data Catalog terms of
 use](https://www.denvergov.org/opendata/termsofuse)
