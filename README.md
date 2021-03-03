@@ -82,7 +82,7 @@ ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) +
   theme_bw()
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="75%" />
 
 gross sales by month, faceted by year
 

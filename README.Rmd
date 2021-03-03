@@ -63,7 +63,7 @@ gross sales by year, faceted by medical or retail
 ```{r echo = TRUE, warning = FALSE, message = FALSE}
 library(tidyverse)
 ```
-```{r, fig.height = 3, fig.width = 4.5} 
+```{r, out.width = '75%'} 
 ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) + 
   geom_bar(stat = 'identity', fill = '#709B40') +
   facet_wrap(~GROSS_SALES_TYPE) +
