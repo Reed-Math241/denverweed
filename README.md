@@ -79,8 +79,8 @@ library(tidyverse)
 #> x dplyr::filter() masks stats::filter()
 #> x dplyr::lag()    masks stats::lag()
 
-ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) + 
-  geom_bar(stat = 'identity', fill = 'green') +
+ggplot(weed) + 
+  geom_bar(stat = 'identity', fill = '#709B40', aes(x = YEAR, y = GROSS_SALES)) +
   facet_wrap(~GROSS_SALES_TYPE) +
   scale_y_continuous(labels = scales::comma) + 
   ylab("Gross Sales ($)") + 
