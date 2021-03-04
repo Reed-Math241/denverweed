@@ -123,7 +123,8 @@ sales, by year
 ggplot(weed_wider, aes(x = `Medical Total Gross Sales`, y = `Retail Total Gross Sales`, color = YEAR)) +
   geom_point() +
   scale_y_continuous(labels = scales::comma) +
-   scale_x_continuous(labels = scales::comma) +
+  scale_x_continuous(labels = scales::comma) +
+  scale_color_discrete(name = "Year") +
   theme_bw()
 ```
 
