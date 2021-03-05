@@ -66,7 +66,9 @@ head(weed_wider)
 
 ## Example
 
-gross sales by year, faceted by medical or retail
+of course, we’re curious to see how marijuana sales have changed over
+the years. here we plot gross sales by year, faceted by medical or
+retail
 
 ``` r
 library(tidyverse)
@@ -84,7 +86,9 @@ ggplot(weed, aes(x = YEAR, y = GROSS_SALES)) +
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="75%" />
 
-gross sales by month, faceted by year
+if we plot sales by month, we can add more detail. here we plot gross
+sales by month, faceted by year. we can see a general increase in
+marijuana sales.
 
 ``` r
 
@@ -100,7 +104,9 @@ ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) +
 
 <img src="man/figures/README-unnamed-chunk-8-1.png" width="75%" />
 
-gross sales by month, faceted by year and retail/medical
+now we’d like to see the difference in medical/retail sales over time,
+by month. here we plot gross sales by month, faceted by year and
+retail/medical
 
 ``` r
 ggplot(weed, aes(x = MONTH, y = GROSS_SALES)) + 
