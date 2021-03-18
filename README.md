@@ -21,7 +21,7 @@ The development version of denverweed is available from
 
 ``` r
 install.packages("devtools")
-devtools::install_github("Reed-Math241/pkgGrpm")
+devtools::install_github("Reed-Math241/denverweed")
 ```
 
 ## About the data
